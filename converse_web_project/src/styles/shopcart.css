@@ -1,0 +1,624 @@
+.header-wrapper{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.header{
+    height: 50px;
+    width: 100%;
+    background: black;
+    line-height: 50px;
+    /* overflow: hidden; */
+    position: fixed;
+    z-index: 100;
+}
+.header-content{
+    width: 1370px;
+    height: 100%;
+    margin: 0 auto;
+}
+.header-logo{
+    width: 163px;
+    height: 21.59px;
+    float: left;
+    margin: 5px 0;
+}
+.header-logo a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: url(https://image.converse.com.cn/images/commons/header-footer-new3.png)
+    no-repeat;
+}
+.box-headerbox{
+    height: 100%;
+    display:inline-block;
+    zoom:1;
+    float:right;
+}
+.box-headerbox a,.box-headerbox span{
+    height: 100%;
+    padding-right: 33px;
+    margin: 0 15px 0 32px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.icon-box::before{
+    background-image: url(https://image.converse.com.cn/images/commons/sprites_header_footer.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: white;
+    height: 31px;
+    margin-top: -15px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 30px;
+    line-height: 30px;
+    display: block;
+    content: "";
+    margin-left: -15px;
+}
+.help-button::before{
+    background-position: -169px -161px;
+}
+.help-button:hover::before{
+    background-position: -167px -1px;
+}
+.search-button::before{
+    background-position: -137px -161px;
+}
+.search-button:hover::before{
+    background-position: -135px -1px;
+}
+.chat-button::before{
+    background-position: -95px -54px;
+}
+.chat-button:hover::before{
+    background-position: -135px -33px;
+}
+.header-shopcarts{
+    float: right;
+    padding-right: 33px;
+    margin-left: 15px;
+    margin-right: 45px;
+    position: relative;
+}
+.header-shopcarts a{
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+}
+.header-shopcarts a:hover{
+    text-decoration: underline #ddd;
+}
+.header-shopcarts span{
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 31px;
+    background: url(https://image.converse.com.cn/images/commons/sprites_header_footer.png);
+    background-position: -168px -97px;
+    top: 11px;
+    left: 60px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 31px;
+    cursor: default;
+}
+.login-register{
+    padding-right: 33px;
+    margin-right: 40px;
+    float: right;
+    position: relative;
+    color: white;
+    font-size: 12px;
+    height: 100%;
+}
+.login-register span{
+    cursor: pointer;
+}
+.login:hover,.register:hover{
+    text-decoration: underline;
+}
+.login-register::after{
+    content: "";
+    width: 30px;
+    height: 31px;
+    position: absolute;
+    background: url(https://image.converse.com.cn/images/commons/sprites_header_footer.png)
+    no-repeat -96px -85px;
+    background-color: transparent;
+    top:11px;
+    left: 70px;
+}
+.login-register:hover::after{
+    background-position: -136px -65px
+}
+.search-content{
+    width: 100%;
+    height:40px;
+    /* overflow: hidden; */
+    margin: 0 auto;
+    padding: 20px 0;
+    position: absolute;
+    display: none;
+    background: #fff;
+}
+.search-content input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 24px;
+    padding: 0 200px;
+}
+.search-button-content{
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    right: 20%;
+}
+.btn{
+    width: 32px;
+    height: 32px;
+    background-image: url(https://image.converse.com.cn/images/commons/sprites_header_footer.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    float: right;
+    margin-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.close{
+    background-position: -168px -129px;
+}
+.close:hover{
+    background-position: -136px -129px;
+}
+.search{
+    background-position: -136px -161px;
+}
+.search:hover{
+    background-position: -134px -1px;
+}
+.pagecontent{
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+.public-top{
+    width: 100%;
+}
+.con-progress{
+    position: relative;
+    width: 486px;
+    padding: 0;
+    margin: 40px auto 34px;
+}
+.con-progress-curval-1{
+    height:46px;
+}
+.list-unstyle{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.float-clearfix{
+    clear: both!important;
+}
+.float-clearfix::after{
+    display: block;
+    content: "";
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.public-top .con-progress .list-unstyle li{
+    float: left;
+    width: 33.333333%;
+    text-align: center;
+}
+.public-top .con-progress .list-unstyle li a{
+    display: block;
+    color: #000;
+    font-size: 14px;
+    cursor: default;
+    padding-bottom: 10px;
+}
+.public-top .con-progress .list-unstyle li i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://image.converse.com.cn/images/shoppingcart-2/null-gress.png) no-repeat center center;
+    background-color: white;
+}
+.public-top .con-progress-curval-1 li.con-progress-step-1 i{
+    background: url(https://image.converse.com.cn/images/shoppingcart-2/gress.png) no-repeat center center;
+    background-color: white;
+}
+.public-top .con-progress .list-unstyle li.con-progress-step-2:before{
+    content: "";
+    height: 1px;
+    background-color: #979797;
+    left: 18.7%;
+    position: absolute;
+    top: 75%;
+    width: 142px;
+}
+.public-top .con-progress .list-unstyle li.con-progress-step-2:after{
+    content: "";
+    height: 1px;
+    background-color: #979797;
+    left: 52.1%;
+    position: absolute;
+    top: 75%;
+    width: 142px;
+}
+.min-contanier{
+    min-width: 679px;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.clearfix:after{
+    clear: both;
+    content: "";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+.shopcart-content .shopcart-title-box{
+    width: 100%;
+    margin: 0 auto;
+}
+.shopcart-content .shopcart-title-box p{
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 26px;
+}
+.shopcart-content .checked-goods-box{
+    margin-bottom: 8px;
+}
+.shopcart-content .checked-goods-box .is-active{
+    background: url(https://image.converse.com.cn/images/shoppingcart-2/check.png) no-repeat left center;
+}
+.shopcart-content .checked-goods-box .checked-all{
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0;
+    padding-left: 28px;
+    cursor: pointer;
+}
+.shopcart-content .checked-goods-box span{
+    margin-left: 18px;
+    font-size: 14px;
+    color: #333;
+}
+.shopcart-content .checked-goods-box span em{
+    font-size: 14px;
+    color: #b63330;
+    margin: 0 3px;
+    font-style: normal!important;
+}
+.shopcart-list-content{
+    border-top: 1px solid #b7b7b7;
+    border-bottom: 1px solid #b7b7b7;
+    padding: 0 29px;
+}
+.shopcart-list{
+    border-bottom: 1px dashed #605f5f;
+}
+.goods-box{
+    overflow: hidden;
+    padding-bottom: 28px;
+}
+.goods-box .goods-img{
+    float: left;
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+.goods-box .goods-img a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.goods-box .goods-img a img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.goods-box .goods-detial{
+    float: left;
+    padding-left: 30px;
+    padding-top: 40px;
+    width: 35%;
+}
+.goods-box .goods-detial h4{
+    font-size: 18px;
+    color: #000;
+    line-height: 18px;
+    padding-bottom: 30px;
+}
+.goods-box .goods-detial h4 a{
+    color: #000;
+}
+.goods-box .goods-detial p{
+    font-size: 12px;
+    color: #333;
+    line-height: 12px;
+    padding-bottom: 10px;
+}
+.goods-box .goods-price{
+    float: right;
+    margin-top: 40px;
+}
+.shopcart-qty{
+    position: relative;
+    width: 120px;
+}
+.shopcart-qty label{
+    position: absolute;
+    top: 6px;
+    left: -12px;
+    font-size: 14px;
+    color: #333;
+}
+.shopcart-qty .calculate-num{
+    width: 92px;
+    height: 25px;
+    margin-top: 15px;
+    position: relative;
+    right: -26px;
+    border: 1px solid #bcbcbc;
+}
+.shopcart-qty .calculate-num i{
+    width: 25px;
+    height: 25px;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+.shopcart-qty .calculate-num .icon-left-minus{
+    background: url("https://image.converse.com.cn/images/shoppingcart-2/minus_dark.png") no-repeat center center;
+}
+.shopcart-qty .calculate-num input{
+    float: left;
+    display: block;
+    width: 38px;
+    height: 25px;
+    outline: 0;
+    padding: 0;
+    color: #999;
+    text-align: center;
+    border: 0;
+    border-left: 1px solid #bcbcbc;
+    border-right: 1px solid #bcbcbc;
+}
+.shopcart-qty .calculate-num .icon-left-plus{
+    background: url(https://image.converse.com.cn/images/shoppingcart-2/add_dark.png) no-repeat center center;
+}
+.goods-box .goods-price p{
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #b63330;
+    text-align: right;
+}
+.shopcart-checkout{
+    overflow: hidden;
+    padding-bottom: 92px;
+}
+.shopcart-checkout-left{
+    float: left;
+}
+.shopcart-checkout-left .help-box{
+    width: 300px;
+    height: 155px;
+    padding: 20px;
+    border: 1px solid #b2b2b2;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+}
+.shopcart-checkout-left .shopping-box{
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #b2b2b2;
+}
+.shopcart-checkout-left .help-box{
+    width: 300px;
+    height: 155px;
+    padding: 20px;
+    border: 1px solid #b2b2b2;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+}
+.shopcart-checkout-left .help-box h4{
+    font-size: 16px;
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.shopcart-checkout-left .help-box a{
+    display: block;
+    position: relative;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    padding-left: 14px;
+}
+.shopcart-checkout-left .help-box a:before{
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 3px;
+    border-radius: 50%;
+    background: #424242;
+}
+.shopcart-checkout-left .shopping-box{
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #b2b2b2;
+}
+.shopcart-checkout-left .shopping-box a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+.shopcart-checkout-right{
+    float: right;
+}
+.summary-info{
+    width: 242px;
+}
+.summary-info>div{
+    overflow: hidden;
+}
+.summary-info>div .tit{
+    float: left;
+    font-size: 18px;
+    color: #333;
+    line-height: 28px;
+}
+.summary-info>div .info{
+    float: right;
+    font-size: 18px;
+    color: #333;
+    line-height: 28px;
+}
+.summary-info>div:nth-child(3) .tit{
+    font-size: 24px;
+}
+.summary-info>div:nth-child(2) .info, .summary-info>div:nth-child(3) .info{
+    color: #b63330;
+}
+.summary-info>div .tit{
+    float: left;
+    font-size: 18px;
+    color: #333;
+    line-height: 28px;
+}
+.summary-info>div:nth-child(4) p{
+    font-size: 14px;
+    color: #151515;
+    line-height: 24px;
+}
+.summary-info>div:nth-child(4) p span{
+    color: #940000;
+}
+.shopcart-checkout-right .settle-accounts{
+    width: 198px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    background: #b63330;
+    position: relative;
+    right: -44px;
+    margin-top: 37px;
+    cursor: pointer;
+}
+.footer-wrapper{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    color: #FFF;
+}
+.footer{
+    height: 185px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+}
+.footer a{
+    color: white;
+}
+.footer ul{
+    line-height: 30px;
+    padding: 18px 0;
+    width: auto;
+    margin-bottom: 86px;
+}
+.footer ul li{
+    display: inline-block;
+    zoom: 1;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.footer-logo{
+    width: 55px;
+    height: 50px;
+    position: absolute;
+    background: url(https://image.converse.com.cn/images/commons/header-footer-new2.png)
+    no-repeat 0 0 transparent;
+    background-size: 100%;
+    left: 50%;
+    margin: 15px 0 0 -30px;
+    top: 22%;
+    cursor: pointer;
+}
+.footer-bottom{
+    bottom: 40px;
+    display: block;
+    margin: 12px auto;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+}
+.footer-bottom img{
+    vertical-align: middle;
+    margin-right: 4px;
+    display: inline-block;
+}
+.tip-for-frand{
+    display: block;
+    text-align: center;
+}
+.tip-for-frand a{
+    display: block;
+    position: relative;
+    overflow: inherit;
+    color: #fff;
+}
+.tip-for-frand a img{
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.livechat{
+    position: absolute;
+    right: 0;
+    top: 200px;
+    z-index: 100000000000;
+    transition: top 1s;
+    cursor: pointer;
+}
+.livechat img{
+    width: 100%;
+    height: 100%;
+}

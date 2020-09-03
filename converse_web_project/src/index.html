@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>converse</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+</head>
+<body>
+    <div class="header-wrapper">
+        <div class="header" >
+            <div class="header-content">
+                <div class="header-logo">
+                    <a href="./index.html"></a>
+                </div>
+                <div class="box-headerbox"><a class="icon-box help-button" href="https://www.converse.com.cn/helpcenter/guide_top.htm"></a></div>
+                <div class="box-headerbox"><span class="icon-box search-button" id="search-button"></span></div>
+                <div class="box-headerbox"><a class="icon-box chat-button" href="https://cstool.converse.com.cn/live800/chatClient/chatbox.jsp?companyID=80001824&configID=2"></a></div>
+                <div class="header-shopcarts" id="header-shop-carts">
+                    <a href="./shopcart.html" target="_self">购物车</a>
+                    <!-- <span>1</span> -->
+                </div>
+                <div class="login-register">
+                    <span class="login">登录</span>
+                    <i>/</i>
+                    <span class="register">注册</span>
+                </div>
+            </div>
+            <div class="search-content" id="search-box">
+                <input type="text" placeholder="想找什么随便搜">
+                <div class="search-button-content">
+                    <div class="close btn" id="close-btn"></div>
+                    <div class="search btn" id="search-btn"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-wrapper">
+        <div class="header-nav" id="nav">
+            <ul>
+                <li>
+                    <a href="./goodslist.html" id="nav-male" data-type="male">男的</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="./goodslist.html" id="nav-female" data-type="female">女的</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="./goodslist.html" id="nav-children" data-type="children">儿童</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#" data-type="blank">联名合作款</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#" data-type="blank">店铺分布</a>
+                    <i></i>
+                </li>
+            </ul>
+            <div class="header-nav-second" id="second-list">
+                <ul class="first-floor" id="first-floor">
+                </ul>
+                <div class="center-line"></div>
+                <ul class="second-floor" id="second-floor">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pagecontent">
+        <div class="homenotice">
+            <a href="https://www.converse.com.cn/helpcenter/notice.htm">
+                尊敬的客户，新疆近期因受疫情影响，部分道路及区域管控较严，所有发往新疆方向的快递，派送时效将会有所延迟，烦请耐心等待，感谢您的理解和配合。
+            </a>
+        </div>
+        <div class="banner" id="banner">
+            <div class="banner-content" id="img-wrapper">
+                <div class="banner-img"><img src="./img/banner-1.jpg" alt=""></div>
+                <div class="banner-img"><img src="./img/banner-2.jpg" alt=""></div>
+                <div class="banner-img"><img src="./img/banner-3.jpg" alt=""></div>
+                <div class="banner-img"><img src="./img/banner-4.jpg" alt=""></div>
+            </div>
+            <div class="arrow left" id="prev-btn"><span></span></div>
+            <div class="arrow right" id="next-btn"><span></span></div>
+            <div class="banner-menu" id="pagination">
+                <ul>
+                    <li>TEAR AWAY</li>
+                    <li>RENEW</li>
+                    <li>ARCHIVE PRINTS</li>
+                    <li>ERX</li>
+                </ul>
+            </div>
+        </div>
+        <div class="hotselling-product">
+            <div class="category-title"><h1>热卖单品</h1></div>
+            <div class="clearfix" id="hp-selector">
+                <div class="hp-container hp-container1">
+                    <span>男的踩的</span>
+                    <img data-type="male" src="https://image.converse.com.cn/static/home/homepage/top_02_1203.jpg?201907190100" alt="">
+                </div>
+                <div class="hp-container hp-container2">
+                    <span>女的踩的</span>
+                    <img data-type="female" src="https://image.converse.com.cn/static/home/homepage/top_01_1203.jpg?201907190100" alt="">
+                </div>
+                <div class="hp-container hp-container3">
+                    <span>穿的</span>
+                    <img data-type="cloth" src="https://image.converse.com.cn/static/home/homepage/top_01_05.jpg?201907190100" alt="">
+                </div>
+                <div class="hp-container hp-container4">
+                    <span>戴的</span>
+                    <img data-type="wear" src="https://image.converse.com.cn/static/home/homepage/top_01_07.jpg?201907190100" alt="">
+                </div>
+            </div>
+            <div class="hp-container-line">
+                <div class="brand-menu" id="brand-menu"></div>
+            </div>
+            <div class="hp-product-list">
+                <ul class="hp-product-first" id="hp-list-first">
+                    <li>
+                        <img src="./img/p1-1.jpg" alt="">
+                        <span class="hp-product-title">【男女同款】chunk70</span>
+                        <span class="hp-product-price">￥569.00</span>
+                    </li>
+                    <li>
+                        <img src="./img/p2-1.jpg" alt="">
+                        <span class="hp-product-title">【男女同款】chunk70</span>
+                        <span class="hp-product-price">￥599.00</span>
+                    </li>
+                    <li>
+                        <img src="./img/p3-1.jpg" alt="">
+                        <span class="hp-product-title">【男女同款】chunk70</span>
+                        <span class="hp-product-price">￥569.00</span>
+                    </li>
+                    <li>
+                        <img src="./img/p4-1.jpg" alt="">
+                        <span class="hp-product-title">【男女同款】chunk70</span>
+                        <span class="hp-product-price">￥599.00</span>
+                    </li>
+                </ul>
+                <ul class="hp-product-second" id="hp-list-second">
+                    <li>
+                        <img src="./img/p5-1.jpg" alt="">
+                        <span class="hp-product-title">【男女同款】chunk70</span>
+                        <span class="hp-product-price">￥669.00</span>
+                    </li>
+                    <li>
+                        <img src="./img/p6-1.jpg" alt="">
+                        <span class="hp-product-title">【男女同款】chunk70</span>
+                        <span class="hp-product-price">￥569.00</span>
+                    </li>
+                    <li>
+                        <img src="./img/p7-1.jpg" alt="">
+                        <span class="hp-product-title">【男女同款】chunk70</span>
+                        <span class="hp-product-price">￥599.00</span>
+                    </li>
+                    <li>
+                        <img src="./img/p8-1.jpg" alt="">
+                        <span class="hp-product-title">【男女同款】chunk70</span>
+                        <span class="hp-product-price">￥439.00</span>
+                    </li>
+                </ul>
+                <div class="hp-more">
+                    <a href="../src/goodslist.html">查看所有男的踩的所有商品</a>
+                </div>
+            </div> 
+        </div>
+        <div class="new-recommendation">
+            <div class="category-title"><h1>新品推荐</h1></div>
+            <div class="hp-product-list">
+                <ul class="hp-product-first">
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168623C001/168623C001_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【男女同款】chunk70</span>
+                        <span class="hp-product-price">￥639.00</span>
+                    </li>
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168671C102/168671C102_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【欧阳娜娜同款】chunk70</span>
+                        <span class="hp-product-price">￥599.00</span>
+                    </li>
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168624C333/168624C333_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【男女同款】Chuck 70</span>
+                        <span class="hp-product-price">￥639.00</span>
+                    </li>
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168628C001/168628C001_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【男女同款】Chuck 70</span>
+                        <span class="hp-product-price">￥599.00</span>
+                    </li>
+                </ul>
+                <ul class="hp-product-first">
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168670C001/168670C001_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【欧阳娜娜同款】Chuck 70</span>
+                        <span class="hp-product-price">￥599.00</span>
+                    </li>
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168809C102/168809C102_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【男女同款】Chuck Taylor All Star</span>
+                        <span class="hp-product-price">￥439.00</span>
+                    </li>
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168808C001/168808C001_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【男女同款】Chuck Taylor All Star</span>
+                        <span class="hp-product-price">￥469.00</span>
+                    </li>
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168616C610/168616C610_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【男女同款】Pro Leather</span>
+                        <span class="hp-product-price">￥439.00</span>
+                    </li>
+                </ul>
+                <ul class="hp-product-first">
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168619C113/168619C113_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【男女同款】Pro Leather</span>
+                        <span class="hp-product-price">￥599.00</span>
+                    </li>
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168761C281/168761C281_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【男女同款】Pro Leather X2</span>
+                        <span class="hp-product-price">￥669.00</span>
+                    </li>
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168691C102/168691C102_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【欧阳娜娜同款】Pro Leather X2</span>
+                        <span class="hp-product-price">￥639.00</span>
+                    </li>
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168760C001/168760C001_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【欧阳娜娜同款】Pro Leather X2</span>
+                        <span class="hp-product-price">￥639.00</span>
+                    </li>
+                </ul>
+                <ul class="hp-product-second">
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168635C102/168635C102_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【男女同款】UNT1TL3D</span>
+                        <span class="hp-product-price">￥499.00</span>
+                    </li>
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168636C001/168636C001_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【男女同款】UNT1TL3D</span>
+                        <span class="hp-product-price">￥499.00</span>
+                    </li>
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168824C001/168824C001_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【男女同款】chunk70</span>
+                        <span class="hp-product-price">￥569.00</span>
+                    </li>
+                    <li>
+                        <img src="https://image.converse.com.cn/resources/product/168673C102/168673C102_1B_NEW.png?2020082101" alt="">
+                        <span class="hp-product-title">【男女同款】chunk70</span>
+                        <span class="hp-product-price">￥569.00</span>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+    <div class="page-bottom">
+        <div class="specialfeature">
+            <div class="specialfeature-title">
+                <img src="https://image.converse.com.cn/static/home/logo-icon.png" alt="">
+                <span>街头先型</span>
+            </div>
+            <div class="specialfeature-main clearfix">
+                <div class="specialfeature-content specialfeature-left">
+                    <a href="#">
+                        <img src="./img/up-1.png" alt="">
+                        <div class="mask"></div>
+                    </a>
+                    <span>CONVERSE SHAPES</span>
+                    <span class="buy-button">
+                    查看更多
+                    </span>
+                </div>
+                <div class="specialfeature-content specialfeature-right">
+                    <a href="#">
+                        <img src="./img/up-2.jpg" alt="">
+                        <div class="mask"></div>
+                    </a>
+                    <span>环保再生，不断更新</span>
+                    <span class="buy-button">
+                    查看更多
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="specialfeature">
+            <div class="specialfeature-title">
+                <img src="https://image.converse.com.cn/static/home/logo-icon.png" alt="">
+                <span>智酷精选 玩转潮流</span>
+            </div>
+            <div class="specialfeature-main specialfeature-main-two clearfix">
+                <div class="specialfeature-content specialfeature-two">
+                    <a href="#">
+                        <img src="https://image.converse.com.cn/static/touts/PC_7-JP_200701.jpg" alt="">
+                        <div class="mask"></div>
+                    </a>
+                    <span>JACK PUPCELL</span>
+                    <span class="buy-button">查看更多</span>
+                </div>
+                <div class="specialfeature-content specialfeature-two">
+                    <a href="#">
+                        <img src="https://image.converse.com.cn/static/touts/04PC_BottomTout_rivals.jpg" alt="">
+                        <div class="mask"></div>
+                    </a>
+                    <span>CHUCK 70</span>
+                    <span class="buy-button">查看更多</span>
+                </div>
+                <div class="specialfeature-content specialfeature-two">
+                    <a href="#">
+                        <img src="https://image.converse.com.cn/static/touts/PC_6-AS_200701.jpg" alt="">
+                        <div class="mask"></div>
+                    </a>
+                    <span>CHUCK TAYLOPR ALL STAR</span>
+                    <span class="buy-button">查看更多</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="information attention">
+        <h1>关注CONVERSE</h1>
+        <p>Converse同时活跃在各类社交网络平台，点击下列你所喜爱的常用社交平台，密切关注Converse的最新产品与资讯。</p>
+        <div class="information-link clearfix">
+            <a href="#" class="weibo"></a>
+            <a href="#" class="weixin"></a>
+        </div>
+    </div>
+    <div class="sitemap clearfix">
+        <div class="category-title">
+        </div>
+        <dl>
+            <dt><a href="#">
+                男的
+            </a></dt>
+            <dd><a href="#">CHUCK TAYLOR ALL STAR</a></dd>
+            <dd><a href="#">CONVERSE CONS</a></dd>
+            <dd><a href="#">JACK PURCELL</a></dd>
+            <dd class="mgb20"><a href="#">CHUCK II</a></dd>
+            <dd><a href="#">踩的</a></dd>
+            <dd><a href="#">穿的</a></dd>
+            <dd><a href="#">戴的</a></dd>
+            <dd><a href="#">优惠</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="#">
+                女的
+            </a></dt>
+            <dd><a href="#">CHUCK TAYLOR ALL STAR</a></dd>
+            <dd><a href="#">CONVERSE CONS</a></dd>
+            <dd><a href="#">JACK PURCELL</a></dd>
+            <dd class="mgb20"><a href="#">CHUCK II</a></dd>
+            <dd><a href="#">踩的</a></dd>
+            <dd><a href="#">穿的</a></dd>
+            <dd><a href="#">戴的</a></dd>
+            <dd><a href="#">优惠</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="#">
+                儿童
+            </a></dt>
+            <dd><a href="#">CHUCK TAYLOR ALL STAR</a></dd>
+            <dd><a href="#">CONVERSE CONS</a></dd>
+            <dd><a href="#">&nbsp</a></dd>
+            <dd class="mgb20"><a href="#">&nbsp</a></dd>
+            <dd><a href="#">踩的</a></dd>
+            <dd><a href="#">穿的</a></dd>
+            <dd><a href="#">戴的</a></dd>
+            <dd><a href="#">优惠</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="#">
+                GLOBAL
+            </a></dt>
+            <dd><a href="#">CONVERSE GLOBAL SITES</a></dd>
+        </dl>
+        <dl style="margin-left: 120px;">
+            <dt><a href="#">
+                我的账户
+            </a></dt>
+            <dd><a href="#">现有订单</a></dd>
+            <dd><a href="#">过去订单</a></dd>
+            <dd><a href="#">退换货</a></dd>
+            <dd><a href="#">账户设置</a></dd>
+            <dd><a href="#">地址簿</a></dd>
+            <dd><a href="#">我的优惠券</a></dd>
+            <dd><a href="#">我的收藏</a></dd>
+            <dd><a href="#">我的评论</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="#">
+                帮助和购物指南
+            </a></dt>
+            <dd><a href="#">账户</a></dd>
+            <dd><a href="#">订单</a></dd>
+            <dd><a href="#">尺码</a></dd>
+            <dd><a href="#">退货和退款</a></dd>
+            <dd><a href="#">换货</a></dd>
+            <dd><a href="#">配送</a></dd>
+            <dd><a href="#">联系我们</a></dd>
+            <dd><a href="#">常见问题</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="#">
+                NIKE
+            </a></dt>
+            <dd><a href="#">NIKE+</a></dd>
+            <dd><a href="#">JORDAN</a></dd>
+        </dl>
+    </div>
+    <div class="footer-wrapper">
+        <div class="footer">
+            <ul>
+                <li>关于我们</li>
+                <li>帮助和购物指南</li>
+                <li>法律声明</li>
+                <li>使用规则</li>
+            </ul>
+            <div class="footer-logo"><a href="http://www.converse.com.cn"></a></div>
+            <div class="footer-bottom">
+                @匡威体育用品（中国）有限公司 保留所有权利    沪ICP备11044134号-2&nbsp;&nbsp;
+                <a href="#">
+                    <img src="https://image.converse.com.cn/images/homepage/beiAn.png" alt="">
+                    沪公网安备 31011002001667号&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+                <a href="#">
+                    <img src="https://image.converse.com.cn/images/commons/business-license.png" alt="">
+                    电子营业执照&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>     
+                <a href="#">
+                    公司执照
+                </a>
+            </div>
+            <div class="tip-for-frand">
+                <a href="#">
+                    <img src="https://image.converse.com.cn/images/cautionIcon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="livechat" id="livechat">
+        <img src="https://image.converse.com.cn/images/livechat.png" alt="">
+    </div>
+    <script src="./javascripts/libs/jquery.js"></script>
+    <!-- <script src="./javascripts/index/banner.js"></script> -->
+    <script type="module">
+        import index from "./javascripts/index/index.js";
+        index();
+    </script>
+</body>
+</html>

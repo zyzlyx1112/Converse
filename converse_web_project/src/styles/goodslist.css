@@ -1,0 +1,557 @@
+.header-wrapper{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.header{
+    height: 50px;
+    width: 100%;
+    background: black;
+    line-height: 50px;
+    /* overflow: hidden; */
+    position: fixed;
+    z-index: 100;
+}
+.header-content{
+    width: 1370px;
+    height: 100%;
+    margin: 0 auto;
+}
+.header-logo{
+    width: 163px;
+    height: 21.59px;
+    float: left;
+    margin: 5px 0;
+}
+.header-logo a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: url(https://image.converse.com.cn/images/commons/header-footer-new3.png)
+    no-repeat;
+}
+.box-headerbox{
+    height: 100%;
+    display:inline-block;
+    zoom:1;
+    float:right;
+}
+.box-headerbox a,.box-headerbox span{
+    height: 100%;
+    padding-right: 33px;
+    margin: 0 15px 0 32px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.icon-box::before{
+    background-image: url(https://image.converse.com.cn/images/commons/sprites_header_footer.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: white;
+    height: 31px;
+    margin-top: -15px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 30px;
+    line-height: 30px;
+    display: block;
+    content: "";
+    margin-left: -15px;
+}
+.help-button::before{
+    background-position: -169px -161px;
+}
+.help-button:hover::before{
+    background-position: -167px -1px;
+}
+.search-button::before{
+    background-position: -137px -161px;
+}
+.search-button:hover::before{
+    background-position: -135px -1px;
+}
+.chat-button::before{
+    background-position: -95px -54px;
+}
+.chat-button:hover::before{
+    background-position: -135px -33px;
+}
+.header-shopcarts{
+    float: right;
+    padding-right: 33px;
+    margin-left: 15px;
+    margin-right: 45px;
+    position: relative;
+}
+.header-shopcarts a{
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+}
+.header-shopcarts a:hover{
+    text-decoration: underline #ddd;
+}
+.header-shopcarts span{
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 31px;
+    background: url(https://image.converse.com.cn/images/commons/sprites_header_footer.png);
+    background-position: -168px -97px;
+    top: 11px;
+    left: 60px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 31px;
+    cursor: default;
+}
+.login-register{
+    padding-right: 33px;
+    margin-right: 40px;
+    float: right;
+    position: relative;
+    color: white;
+    font-size: 12px;
+    height: 100%;
+}
+.login-register span{
+    cursor: pointer;
+}
+.login:hover,.register:hover{
+    text-decoration: underline;
+}
+.login-register::after{
+    content: "";
+    width: 30px;
+    height: 31px;
+    position: absolute;
+    background: url(https://image.converse.com.cn/images/commons/sprites_header_footer.png)
+    no-repeat -96px -85px;
+    background-color: transparent;
+    top:11px;
+    left: 70px;
+}
+.login-register:hover::after{
+    background-position: -136px -65px
+}
+.search-content{
+    width: 100%;
+    height:40px;
+    /* overflow: hidden; */
+    margin: 0 auto;
+    padding: 20px 0;
+    position: absolute;
+    display: none;
+    background: #fff;
+}
+.search-content input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 24px;
+    padding: 0 200px;
+}
+.search-button-content{
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    right: 20%;
+}
+.btn{
+    width: 32px;
+    height: 32px;
+    background-image: url(https://image.converse.com.cn/images/commons/sprites_header_footer.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    float: right;
+    margin-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.close{
+    background-position: -168px -129px;
+}
+.close:hover{
+    background-position: -136px -129px;
+}
+.search{
+    background-position: -136px -161px;
+}
+.search:hover{
+    background-position: -134px -1px;
+}
+.nav-wrapper{
+    width: 100%;
+    background: #464646;
+    height:30px;
+    position: relative;
+}
+.header-nav{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #464646;
+    position: fixed;
+    z-index: 10;
+}
+.header-nav ul {
+    margin-left: 400px; 
+}
+.header-nav ul li{
+    float: left;
+    width: 110px;
+    height:30px;
+    text-align: center;
+    padding: 0 12px;
+}
+.header-nav ul li a{
+    color: white;
+    padding-right: 5px;
+}
+/* .header-nav ul li a:hover{
+    text-decoration: underline;
+} */
+.header-nav ul li i{
+    border-color: white transparent transparent;
+    border-right: 6px solid transparent;
+    border-style: solid;
+    border-width: 6px;
+    width: 0;
+    position: absolute;
+    top: 50%;
+}
+.header-nav-second{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    display: none;
+}
+.header-nav-second ul{
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 130px;
+    overflow:hidden;
+}
+.header-nav-second ul li{
+    float: left;
+    width: 130px;
+    height: 100%;
+    position: relative;
+}
+.header-nav-second ul li img{
+    width: 100%;
+    height:100%;
+}
+.header-nav-second ul li span{
+    width: 100px;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+}
+/* .header-nav-second .second-floor li span{
+    position: absolute;
+    left: 40px;
+} */
+.center-line{
+    height: 1px;
+    width: 100%;
+    background-color: #b7b7b7;
+}
+.pagecontent{
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+.category-title{
+    margin: 40px auto 45px;
+    height: 30px;
+    margin: 20px auto;
+    max-width: 1000px;
+    position: relative;
+    text-align: center;
+}
+.category-title::before{
+    background-color: #b7b7b7;
+    content: "";
+    height: 1px;
+    left: 1.5%;
+    position: absolute;
+    top: 15px;
+    width: 97%;
+}
+.category-title h1{
+    font-size: 30px;
+    padding: 0 4%;
+    background: none repeat scroll 0 0 #fff;
+    display: inline-block;
+    zoom: 1;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+.productlist-content{
+    max-width: 1000px;
+    height: auto;
+    margin: 20px auto 0;
+    position: relative;
+}
+.clearfix::after{
+    clear: both;
+    content: "";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+.productlist-leftcontent{
+    width: 25%;
+    float: left;
+}
+.filterwrapper{
+    width: 88.8%;
+}
+.filter-category{
+    width: auto;
+    height: auto;
+    margin: 0 0 40px 0;
+    padding: 0 8.18%;
+    border: 1px solid #b7b7b7;
+    box-sizing: border-box;
+}
+.filtertop{
+    border-bottom: 1px solid #b7b7b7;
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+}
+.filtertop span{
+    font-size: 18px;
+}
+.resetbtn{
+    width: 100%;
+    height: 30px;
+    line-height: 15px;
+    text-align: right;
+}
+.filter-category-detail{
+    width: 100%;
+    margin-top: 10px;
+}
+.filter-category-detail dl{
+    border-top: 1px solid #b7b7b7;
+    padding: 18px 0 5px 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.filter-category-detail dl dt{
+    font-size: 18px;
+    margin-bottom: 18px;
+    font-weight: bold;
+    background: url("https://image.converse.com.cn/images/commons/plus.png") no-repeat right center;
+}
+.filter-category-detail dl dd{
+    cursor: pointer;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-indent: 8px;
+    display: none;
+}
+.productlist-rightcontent{
+    width: 75%;
+    float: left;
+    height: auto;
+    position: relative;
+}
+.product-list-top{
+    float: left;
+    width: 100%;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sortbox{
+    font-size: 14px;
+}
+.sorttitle{
+    margin: 0 20px;
+    float: left;
+}
+.sort-list a{
+    padding: 3px 15px;
+    border: 1px solid #ccc;
+}
+.sort-list a i{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-bottom: -3px;
+    margin-right: 2px;
+}
+.sort-list a i.a:before{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid #000;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+.sort-list a i.a:after{
+    display: block;
+    content: '';
+    width: 6px;
+    height: 9px;
+    margin: 0 auto;
+    background: #000;
+}
+.sortbox .sort-list .active{
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+.goodslist{
+    width: 33.3333%;
+    height: 300px;
+    float: left;
+    position: relative;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.goodslist:hover{
+    border: 1px solid #999;
+}
+.goodslist img{
+    width: 165px;
+    margin: 0 auto;
+    height: 180px;
+    position: relative;
+    padding-top: 10px;
+}
+.goodslist span{
+    width: 100%;
+    text-align: center;
+    line-height: 18px;
+    display: block;
+}
+.goodslist-title{
+    height: 55px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.goodslist-price{
+    font-weight: bold;
+}
+.pg-num:first-child{
+    margin-left : 300px;
+}
+.pg-num{
+    float: left;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    margin-top: 40px;
+    line-height: 30px;
+    border-radius: 10px;
+    background: #999;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.pg-num:hover{
+    background: black;
+    color: white;
+}
+.footer-wrapper{
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    color: #FFF;
+}
+.footer{
+    height: 185px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+}
+.footer a{
+    color: white;
+}
+.footer ul{
+    line-height: 30px;
+    padding: 18px 0;
+    width: auto;
+    margin-bottom: 86px;
+}
+.footer ul li{
+    display: inline-block;
+    zoom: 1;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.footer-logo{
+    width: 55px;
+    height: 50px;
+    position: absolute;
+    background: url(https://image.converse.com.cn/images/commons/header-footer-new2.png)
+    no-repeat 0 0 transparent;
+    background-size: 100%;
+    left: 50%;
+    margin: 15px 0 0 -30px;
+    top: 22%;
+    cursor: pointer;
+}
+.footer-bottom{
+    bottom: 40px;
+    display: block;
+    margin: 12px auto;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+}
+.footer-bottom img{
+    vertical-align: middle;
+    margin-right: 4px;
+    display: inline-block;
+}
+.tip-for-frand{
+    display: block;
+    text-align: center;
+}
+.tip-for-frand a{
+    display: block;
+    position: relative;
+    overflow: inherit;
+    color: #fff;
+}
+.tip-for-frand a img{
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.livechat{
+    position: absolute;
+    right: 0;
+    top: 200px;
+    z-index: 100000000000;
+    transition: top 1s;
+    cursor: pointer;
+}
+.livechat img{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="./styles/goods.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+</head>
+<body>
+    <div class="header-wrapper">
+        <div class="header" >
+            <div class="header-content">
+                <div class="header-logo">
+                    <a href="./index.html"></a>
+                </div>
+                <div class="box-headerbox"><a class="icon-box help-button" href="https://www.converse.com.cn/helpcenter/guide_top.htm"></a></div>
+                <div class="box-headerbox"><span class="icon-box search-button" id="search-button"></span></div>
+                <div class="box-headerbox"><a class="icon-box chat-button" href="https://cstool.converse.com.cn/live800/chatClient/chatbox.jsp?companyID=80001824&configID=2"></a></div>
+                <div class="header-shopcarts" id="header-shop-carts">
+                    <a href="./shopcart.html" target="_self">购物车</a>
+                    <!-- <span>1</span> -->
+                </div>
+                <div class="login-register">
+                    <span class="login">登录</span>
+                    <i>/</i>
+                    <span class="register">注册</span>
+                </div>
+            </div>
+            <div class="search-content" id="search-box">
+                <input type="text" placeholder="想找什么随便搜">
+                <div class="search-button-content">
+                    <div class="close btn" id="close-btn"></div>
+                    <div class="search btn" id="search-btn"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-wrapper">
+        <div class="header-nav" id="nav">
+            <ul>
+                <li>
+                    <a href="./goodslist.html" id="nav-male" data-type="male">男的</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="./goodslist.html" id="nav-female" data-type="female">女的</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="./goodslist.html" id="nav-children" data-type="children">儿童</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#" data-type="blank">联名合作款</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#" data-type="blank">店铺分布</a>
+                    <i></i>
+                </li>
+            </ul>
+            <div class="header-nav-second" id="second-list">
+                <ul class="first-floor" id="first-floor">
+                </ul>
+                <div class="center-line"></div>
+                <ul class="second-floor" id="second-floor">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="content">
+            <div class="detail-product-img">
+                <div class="namewrapper">
+                    <h1>
+                        <span>【男女同款】Chunk Taylor All star&nbsp;&nbsp;中性</span>
+                    </h1>
+                    <div class="product-price">
+                        <span>价格</span>
+                        <span>￥399.00</span>
+                    </div>
+                </div>
+                <div class="product-img">
+                    <div class="zoomPad">
+                        <div class="small-img-wrapper" id="small-img-wrapper">
+                            <div class="mask"></div>
+                                <!-- <img src="https://image.converse.com.cn/resources/product/164920C703/164920C703_1H_NEW.png?201907190100" alt=""> -->
+                        </div>
+                        <div class="mouse-window" id="cube"></div>
+                        <div class="big-img-wrapper" id="big-img-wrapper"></div>
+                    </div>
+                </div>
+                <div class="product-bottom-list" id="product-bottom-list">
+                    <!-- <span><img src="https://image.converse.com.cn/resources/product/164920C703/164920C703_1H_NEW.png?201907190100" alt=""></span>
+                    <span><img src="https://image.converse.com.cn/resources/product/164920C703/164920C703_1H_NEW.png?201907190100" alt=""></span>
+                    <span><img src="https://image.converse.com.cn/resources/product/164920C703/164920C703_1H_NEW.png?201907190100" alt=""></span>
+                    <span><img src="https://image.converse.com.cn/resources/product/164920C703/164920C703_1H_NEW.png?201907190100" alt=""></span>
+                    <span><img src="https://image.converse.com.cn/resources/product/164920C703/164920C703_1H_NEW.png?201907190100" alt=""></span>
+                    <span><img src="https://image.converse.com.cn/resources/product/164920C703/164920C703_1H_NEW.png?201907190100" alt=""></span> -->
+                </div>
+                <div class="product-description">
+                    <p>作为街头先锋的Converse在潮流领域不断开拓、更新升级，以材质再生利用为亮点推出Renew系列单品，直抒经典型格。</p>
+                    <h3>价格说明（此说明仅当出现价格比较时有效）</h3>
+                    <p>划线价格：划线的价格可能是商品的专柜吊牌价或正品零售价指导价或该商品的曾经展示过的销售价等，仅供您参考。</p>
+                    <p>未划线价格：未划线的价格是商品在官网上的销售标价，具体的成交价格可能因为会员使用优惠券发生变化，最终以订单结算页价格为准。</p> 
+                    <a class="learn-more-btn" href="/all_star/category.htm?iid=pdnvas06012015">
+                        Chuck Taylor All Star
+                    </a>  
+                </div>
+            </div>
+            <div class="detail-tab-list">
+                <div class="tab-wrap">
+                    <div class="tab-title share">
+                        <div>
+                            <i></i>
+                            <span>分享</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-wrap">
+                    <div class="tab-title favorite">
+                        <div class="add-to-favorite">
+                            <i></i>
+                            <span>加入收藏(12)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-wrap">
+                    <div class="tab-title comment">
+                        <div class="review-rating-stars">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-product-buy-wrap">
+                <div class="other-product-list">
+                    <a href="#">
+                        <img src="https://image.converse.com.cn/resources/product/164920C703/164920C703_1S_NEW.png?201907190100" alt="">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <div>
+                        "色 ：金剑黄"
+                        <br>
+                        "型号 ：164920c703"
+                    </div>
+                    <div class="popup-btn">
+                        <i></i>
+                        <span>尺码对照表</span>
+                    </div>
+                </div>
+                <div class="product-add-cart">
+                    <div class="product-size-wrap">
+                        <p>尺码换算器</p>
+                    </div>
+                    <div class="product-select-msg">
+                        <div class="select-line">
+                            <div class="text-left">请输入您的尺码</div>
+                            <div class="text-right">
+                                <span>请选择尺码</span>
+                                <i></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-select-num">
+                        <div class="select-line lineheight14">
+                            <div class="text-left">数量</div>
+                            <div class="text-right numbox">
+                                <input type="text" value="1">
+                                <i></i>
+                                <select  id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="now-buy-btn">
+                        <span>立即购买</span>
+                    </a>
+                    <a href="javascript:void(0)" class="add-cart-btn" id="add-shopcart">
+                        <span>
+                            <i></i>
+                            添加购物车
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sitemap clearfix">
+            <div class="category-title">
+            </div>
+            <dl>
+                <dt><a href="#">
+                    男的
+                </a></dt>
+                <dd><a href="#">CHUCK TAYLOR ALL STAR</a></dd>
+                <dd><a href="#">CONVERSE CONS</a></dd>
+                <dd><a href="#">JACK PURCELL</a></dd>
+                <dd class="mgb20"><a href="#">CHUCK II</a></dd>
+                <dd><a href="#">踩的</a></dd>
+                <dd><a href="#">穿的</a></dd>
+                <dd><a href="#">戴的</a></dd>
+                <dd><a href="#">优惠</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">
+                    女的
+                </a></dt>
+                <dd><a href="#">CHUCK TAYLOR ALL STAR</a></dd>
+                <dd><a href="#">CONVERSE CONS</a></dd>
+                <dd><a href="#">JACK PURCELL</a></dd>
+                <dd class="mgb20"><a href="#">CHUCK II</a></dd>
+                <dd><a href="#">踩的</a></dd>
+                <dd><a href="#">穿的</a></dd>
+                <dd><a href="#">戴的</a></dd>
+                <dd><a href="#">优惠</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">
+                    儿童
+                </a></dt>
+                <dd><a href="#">CHUCK TAYLOR ALL STAR</a></dd>
+                <dd><a href="#">CONVERSE CONS</a></dd>
+                <dd><a href="#">&nbsp</a></dd>
+                <dd class="mgb20"><a href="#">&nbsp</a></dd>
+                <dd><a href="#">踩的</a></dd>
+                <dd><a href="#">穿的</a></dd>
+                <dd><a href="#">戴的</a></dd>
+                <dd><a href="#">优惠</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">
+                    GLOBAL
+                </a></dt>
+                <dd><a href="#">CONVERSE GLOBAL SITES</a></dd>
+            </dl>
+            <dl style="margin-left: 120px;">
+                <dt><a href="#">
+                    我的账户
+                </a></dt>
+                <dd><a href="#">现有订单</a></dd>
+                <dd><a href="#">过去订单</a></dd>
+                <dd><a href="#">退换货</a></dd>
+                <dd><a href="#">账户设置</a></dd>
+                <dd><a href="#">地址簿</a></dd>
+                <dd><a href="#">我的优惠券</a></dd>
+                <dd><a href="#">我的收藏</a></dd>
+                <dd><a href="#">我的评论</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">
+                    帮助和购物指南
+                </a></dt>
+                <dd><a href="#">账户</a></dd>
+                <dd><a href="#">订单</a></dd>
+                <dd><a href="#">尺码</a></dd>
+                <dd><a href="#">退货和退款</a></dd>
+                <dd><a href="#">换货</a></dd>
+                <dd><a href="#">配送</a></dd>
+                <dd><a href="#">联系我们</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">
+                    NIKE
+                </a></dt>
+                <dd><a href="#">NIKE+</a></dd>
+                <dd><a href="#">JORDAN</a></dd>
+            </dl>
+    </div>
+    <div class="footer-wrapper">
+        <div class="footer">
+            <ul>
+                <li>关于我们</li>
+                <li>帮助和购物指南</li>
+                <li>法律声明</li>
+                <li>使用规则</li>
+            </ul>
+            <div class="footer-logo"><a href="http://www.converse.com.cn"></a></div>
+            <div class="footer-bottom">
+                @匡威体育用品（中国）有限公司 保留所有权利    沪ICP备11044134号-2&nbsp;&nbsp;
+                <a href="#">
+                    <img src="https://image.converse.com.cn/images/homepage/beiAn.png" alt="">
+                    沪公网安备 31011002001667号&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+                <a href="#">
+                    <img src="https://image.converse.com.cn/images/commons/business-license.png" alt="">
+                    电子营业执照&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>     
+                <a href="#">
+                    公司执照
+                </a>
+            </div>
+            <div class="tip-for-frand">
+                <a href="#">
+                    <img src="https://image.converse.com.cn/images/cautionIcon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="livechat" id="livechat">
+        <img src="https://image.converse.com.cn/images/livechat.png" alt="">
+    </div>
+    <script src="./javascripts/libs/jquery.js"></script>
+    <script type="module">
+        import goods from "./javascripts/goods/goods.js";
+        goods();
+    </script>
+</body>
+</html>

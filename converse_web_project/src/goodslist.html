@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="./styles/goodslist.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <div class="header">
+            <div class="header-content">
+                <div class="header-logo">
+                    <a href="./index.html"></a>
+                </div>
+                <div class="box-headerbox"><a class="icon-box help-button"
+                        href="https://www.converse.com.cn/helpcenter/guide_top.htm"></a></div>
+                <div class="box-headerbox"><span class="icon-box search-button" id="search-button"></span></div>
+                <div class="box-headerbox"><a class="icon-box chat-button"
+                        href="https://cstool.converse.com.cn/live800/chatClient/chatbox.jsp?companyID=80001824&configID=2"></a>
+                </div>
+                <div class="header-shopcarts" id="header-shop-carts">
+                    <a href="./shopcart.html" target="_self">购物车</a>
+                    <!-- <span>1</span> -->
+                </div>
+                <div class="login-register">
+                    <span class="login">登录</span>
+                    <i>/</i>
+                    <span class="register">注册</span>
+                </div>
+            </div>
+            <div class="search-content" id="search-box">
+                <input type="text" placeholder="想找什么随便搜">
+                <div class="search-button-content">
+                    <div class="close btn" id="close-btn"></div>
+                    <div class="search btn" id="search-btn"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-wrapper">
+        <div class="header-nav" id="nav">
+            <ul>
+                <li>
+                    <a href="#" id="nav-male" data-type="male">男的</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#" id="nav-female" data-type="female">女的</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#" id="nav-children" data-type="children">儿童</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#" data-type="blank">联名合作款</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#" data-type="blank">店铺分布</a>
+                    <i></i>
+                </li>
+            </ul>
+            <div class="header-nav-second" id="second-list">
+                <ul class="first-floor" id="first-floor">
+                </ul>
+                <div class="center-line"></div>
+                <ul class="second-floor" id="second-floor">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pagecontent">
+        <div class="category-title">
+            <h1>男的 / 商品</h1>
+        </div>
+        <div class="productlist-content clearfix">
+            <div class="productlist-leftcontent">
+                <div class="filterwrapper">
+                    <div class="filter-category">
+                        <div class="filtertop"><span>筛选</span></div>
+                        <ul></ul>
+                        <div class="resetbtn"></div>
+                    </div>
+                    <div class="filter-category-detail" id="fcd">
+                        <dl>
+                            <dt>系列</dt>
+                            <dd key="chuck70">CHUCK 70</dd>
+                            <dd key="one_star">ONE STAR</dd>
+                            <dd key="jack_purcell">Jack Purcell</dd>
+                            <dd key="all_star">Chuck Taylor All Star</dd>
+                            <dd key="cons">CONS</dd>
+                        </dl>
+                        <dl>
+                            <dt>季节</dt>
+                            <dd key="spring">春季</dd>
+                            <dd key="summer">夏季</dd>
+                            <dd key="fall">秋季</dd>
+                            <dd key="holiday">冬季</dd>
+                        </dl>
+                        <dl>
+                            <dt>儿童</dt>
+                            <dd key="kids">儿童</dd>
+                        </dl>
+                        <dl data-multi="false">
+                            <dt>产品分类</dt>
+                            <dd property="sneakers">踩的</dd>
+                        </dl>
+                        <dl id="price-li-dl">
+                            <dt>价格</dt>
+                            <dd max="299" min="0">0-299</dd>
+                            <dd max="399" min="300">300-399</dd>
+                            <dd max="499" min="400">400-499</dd>
+                            <dd max="599" min="500">500-599</dd>
+                            <dd max="699" min="600">600-699</dd>
+                            <dd min="700">700+</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="productlist-rightcontent clearfix ">
+                <div class="product-list-top clearfix" id="product-list">
+                    <div class="sortbox" id="type-box">
+                        <div class="sorttitle">排序</div>
+                        <div class="sort-list"><a href="javascript:void(0);" class="active" data-sort="">默认</a><a
+                                href="javascript:void(0);" class="" data-sort="pa"><i class="a"></i>价格</a><a
+                                href="javascript:void(0);" class="" data-sort="fd">最喜欢</a><a href="javascript:void(0);"
+                                class="" data-sort="scd">最畅销</a></div><input type="hidden" value="showOrder"
+                            id="orderFilter">
+                    </div>
+                    <div class="goodslist-box" id="goodslist-box">
+                        <div class="goodslist">
+                                <img src="https://image.converse.com.cn/resources/product/164967C467/164967C467_1B_NEW.png?201907190100" alt="">
+                                <span class="goodslist-title">【男女同款】chunk70</span>
+                                <span class="goodslist-price">￥569.00</span>
+                            </div>
+                            <div class="goodslist">
+                                <img src="https://image.converse.com.cn/resources/product/164967C467/164967C467_1B_NEW.png?201907190100" alt="">
+                                <span class="goodslist-title">【男女同款】chunk70</span>
+                                <span class="goodslist-price">￥569.00</span>
+                            </div>
+                            <div class="goodslist">
+                                <img src="https://image.converse.com.cn/resources/product/164967C467/164967C467_1B_NEW.png?201907190100" alt="">
+                                <span class="goodslist-title">【男女同款】chunk70</span>
+                                <span class="goodslist-price">￥569.00</span>
+                            </div>
+                            <div class="goodslist">
+                                <img src="https://image.converse.com.cn/resources/product/164967C467/164967C467_1B_NEW.png?201907190100" alt="">
+                                <span class="goodslist-title">【男女同款】chunk70</span>
+                                <span class="goodslist-price">￥569.00</span>
+                            </div>
+                    </div>
+                    <ul class="pagination" id="pagination"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-wrapper">
+        <div class="footer">
+            <ul>
+                <li>关于我们</li>
+                <li>帮助和购物指南</li>
+                <li>法律声明</li>
+                <li>使用规则</li>
+            </ul>
+            <div class="footer-logo"><a href="http://www.converse.com.cn"></a></div>
+            <div class="footer-bottom">
+                @匡威体育用品（中国）有限公司 保留所有权利    沪ICP备11044134号-2&nbsp;&nbsp;
+                <a href="#">
+                    <img src="https://image.converse.com.cn/images/homepage/beiAn.png" alt="">
+                    沪公网安备 31011002001667号&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+                <a href="#">
+                    <img src="https://image.converse.com.cn/images/commons/business-license.png" alt="">
+                    电子营业执照&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>     
+                <a href="#">
+                    公司执照
+                </a>
+            </div>
+            <div class="tip-for-frand">
+                <a href="#">
+                    <img src="https://image.converse.com.cn/images/cautionIcon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="livechat" id="livechat">
+        <img src="https://image.converse.com.cn/images/livechat.png" alt="">
+    </div>
+    <script src="./javascripts/libs/jquery.js"></script>
+    <script type="module">
+        import goodslist from "./javascripts/goodslist/goodslist.js";
+        goodslist();
+    </script>
+</body>
+
+</html>
